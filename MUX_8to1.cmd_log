@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/full_mano_CPU/MUX_8to1.xst" -ofn "D:/full_mano_CPU/MUX_8to1.syr" 
+netgen -intstyle ise -ar Structure -tm MUX_8to1 -w -dir netgen/synthesis -ofmt vhdl -sim MUX_8to1.ngc MUX_8to1_synthesis.vhd 
+vhdtdtfi -prj full_mano_CPU -o D:/full_mano_CPU/MUX_8to1.vhi -module MUX_8to1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work MUX_8to1.vhd 
+vhdtdtfi -prj full_mano_CPU -o D:/full_mano_CPU/MUX_8to1.vhi -module MUX_8to1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work MUX_8to1.vhd 

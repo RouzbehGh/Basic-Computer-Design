@@ -1,0 +1,2 @@
+vhdtdtfi -prj full_mano_CPU -o D:/full_mano_CPU/memory.vhi -module memory -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work memory.vhd 
+xst -intstyle ise -ifn "D:/full_mano_CPU/memory.xst" -ofn "D:/full_mano_CPU/memory.syr" 
