@@ -1,0 +1,31 @@
+u1 : pc 
+u2 : R
+u3 : F
+u4 : G
+u5 : Decoder 3 to 8
+u6 : Sequence counter
+u7 : Decoder 2 to 4
+u8 : ALU
+u9 : opr
+u10 : Decoder 4 to 16
+u11 : Mux 4 to 1
+u12 : AC
+u13 : Inverter
+u14 : I0
+u15 : I1
+u16 : common bus
+u17 : CR
+u18 : INP
+u19 : OUT
+u20 : Mux 2to1 10 bit
+u21 : AR
+u22 : MAR
+u23 : MBR
+u24 : RAM
+u25 : Mux 2to1 16 bit
+u26 : FGI
+u27 : FGO
+u28 : ZF
+u29 : CF
+u30 : INF
+u31 : Control Unit
