@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Roozbeh Ghasemi/Desktop/Arad_Roozbeh_Final_9434005_9531424/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Roozbeh Ghasemi/Desktop/Arad_Roozbeh_Final_9434005_9531424/xst"
+elaborate
+-ifn CR.prj
+-ifmt mixed

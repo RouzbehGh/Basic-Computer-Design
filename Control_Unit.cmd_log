@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/full_mano_CPU/Control_Unit.xst" -ofn "D:/full_mano_CPU/Control_Unit.syr" 
+netgen -intstyle ise -ar Structure -tm Control_Unit -w -dir netgen/synthesis -ofmt vhdl -sim Control_Unit.ngc Control_Unit_synthesis.vhd 
+vhdtdtfi -prj full_mano_CPU -o D:/full_mano_CPU/Control_Unit.vhi -module Control_Unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Control_Unit.vhd 
+xst -intstyle ise -ifn "D:/full_mano_CPU/Control_Unit.xst" -ofn "D:/full_mano_CPU/Control_Unit.syr" 
+xst -intstyle ise -ifn "D:/full_mano_CPU/Control_Unit.xst" -ofn "D:/full_mano_CPU/Control_Unit.syr" 
+netgen -intstyle ise -ar Structure -tm Control_Unit -w -dir netgen/synthesis -ofmt vhdl -sim Control_Unit.ngc Control_Unit_synthesis.vhd 

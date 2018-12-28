@@ -1,0 +1,3 @@
+vhdtdtfi -prj full_mano_CPU -o D:/full_mano_CPU/alu.vhi -module alu -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work alu.vhd 
+xst -intstyle ise -ifn "D:/full_mano_CPU/alu.xst" -ofn "D:/full_mano_CPU/alu.syr" 
+netgen -intstyle ise -ar Structure -tm alu -w -dir netgen/synthesis -ofmt vhdl -sim alu.ngc alu_synthesis.vhd 

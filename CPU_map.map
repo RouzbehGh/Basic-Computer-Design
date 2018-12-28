@@ -1,0 +1,20 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'CPU'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c
+100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+Target Device  : xc3s50
+Target Package : pq208
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Fri Jul 13 14:59:49 2018
+
+ERROR:Map:116 - The design is empty.  No processing will be done.
+ERROR:Map:52 - Problem encountered processing RPMs. 
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0

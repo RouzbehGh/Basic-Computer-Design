@@ -1,0 +1,439 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Control_Unit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Control_Unit.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Control_Unit"
+Output Format                      : NGC
+Target Device                      : xc7v2000t-2-fhg1761
+
+---- Source Options
+Top Module Name                    : Control_Unit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\full_mano_CPU\Control_Unit.vhd" into library work
+Parsing entity <Control_Unit>.
+Parsing architecture <Behavioral> of entity <control_unit>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Control_Unit> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Control_Unit>.
+    Related source file is "D:\full_mano_CPU\Control_Unit.vhd".
+WARNING:Xst:647 - Input <MBR9_0<9:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Q<14:13>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <INF> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <S>.
+    Found 1-bit register for signal <MAR_LD>.
+    Found 1-bit register for signal <MUX_2to1_16bit_select>.
+    Found 1-bit register for signal <MBR_LD>.
+    Found 1-bit register for signal <PC_INC>.
+    Found 3-bit register for signal <B>.
+    Found 1-bit register for signal <I0_LD>.
+    Found 1-bit register for signal <I1_LD>.
+    Found 1-bit register for signal <OPR_LD>.
+    Found 1-bit register for signal <AR_LD>.
+    Found 1-bit register for signal <R_LD>.
+    Found 1-bit register for signal <F_LD>.
+    Found 1-bit register for signal <G_RST>.
+    Found 1-bit register for signal <R_RST>.
+    Found 1-bit register for signal <F_RST>.
+    Found 1-bit register for signal <G_LD>.
+    Found 3-bit register for signal <ALU_OP>.
+    Found 2-bit register for signal <a>.
+    Found 1-bit register for signal <AC_LD>.
+    Found 1-bit register for signal <MEM_W>.
+    Found 1-bit register for signal <PC_LD>.
+    Found 1-bit register for signal <AR_INC>.
+    Found 1-bit register for signal <MBR_DEC>.
+    Found 1-bit register for signal <CR_LD>.
+    Found 1-bit register for signal <AC_RST>.
+    Found 1-bit register for signal <CF_RST>.
+    Found 1-bit register for signal <ZF_RST>.
+    Found 1-bit register for signal <AC_SHR>.
+    Found 1-bit register for signal <AC_SHL>.
+    Found 1-bit register for signal <AC_INC>.
+    Found 1-bit register for signal <FGI_RST>.
+    Found 1-bit register for signal <OUTR_LD>.
+    Found 1-bit register for signal <FGO_RST>.
+    Found 1-bit register for signal <INF_LD>.
+    Found 1-bit register for signal <INF_RST>.
+    Found 1-bit register for signal <FGI_LD>.
+    Found 1-bit register for signal <FGO_LD>.
+    Found 1-bit register for signal <PC_RST>.
+    Found 1-bit register for signal <MAR_RST>.
+    Found 1-bit register for signal <SEQ_COUNT_RST>.
+    Summary:
+	inferred  45 D-type flip-flop(s).
+	inferred  67 Multiplexer(s).
+Unit <Control_Unit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 40
+ 1-bit register                                        : 37
+ 2-bit register                                        : 1
+ 3-bit register                                        : 2
+# Multiplexers                                         : 67
+ 1-bit 2-to-1 multiplexer                              : 50
+ 2-bit 2-to-1 multiplexer                              : 5
+ 3-bit 2-to-1 multiplexer                              : 12
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <FGI_RST> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OUTR_LD> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <FGO_RST> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <FGO_LD> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INF_LD> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 45
+ Flip-Flops                                            : 45
+# Multiplexers                                         : 70
+ 1-bit 2-to-1 multiplexer                              : 55
+ 2-bit 2-to-1 multiplexer                              : 4
+ 3-bit 2-to-1 multiplexer                              : 11
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <FGI_RST> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <OUTR_LD> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <FGO_RST> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <FGO_LD> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <INF_LD> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <G_LD> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <PC_RST> in Unit <Control_Unit> is equivalent to the following FF/Latch, which will be removed : <MAR_RST> 
+
+Optimizing unit <Control_Unit> ...
+WARNING:Xst:1710 - FF/Latch <FGI_LD> (without init value) has a constant value of 0 in block <Control_Unit>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <CF_RST> in Unit <Control_Unit> is equivalent to the following FF/Latch, which will be removed : <ZF_RST> 
+INFO:Xst:2261 - The FF/Latch <I1_LD> in Unit <Control_Unit> is equivalent to the following 2 FFs/Latches, which will be removed : <I0_LD> <OPR_LD> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Control_Unit, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Control_Unit.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 134
+#      GND                         : 1
+#      LUT2                        : 8
+#      LUT3                        : 15
+#      LUT4                        : 14
+#      LUT5                        : 32
+#      LUT6                        : 61
+#      MUXF7                       : 2
+#      VCC                         : 1
+# FlipFlops/Latches                : 34
+#      FDE                         : 3
+#      FDR                         : 17
+#      FDRE                        : 14
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 87
+#      IBUF                        : 42
+#      OBUF                        : 45
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7v2000tfhg1761-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              26  out of  2443200     0%  
+ Number of Slice LUTs:                  130  out of  1221600     0%  
+    Number used as Logic:               130  out of  1221600     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    130
+   Number with an unused Flip Flop:     104  out of    130    80%  
+   Number with an unused LUT:             0  out of    130     0%  
+   Number of fully used LUT-FF pairs:    26  out of    130    20%  
+   Number of unique control sets:        24
+
+IO Utilization: 
+ Number of IOs:                          96
+ Number of bonded IOBs:                  88  out of    850    10%  
+    IOB Flip Flops/Latches:               8
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of    128     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 34    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 0.646ns (Maximum Frequency: 1547.628MHz)
+   Minimum input arrival time before clock: 3.575ns
+   Maximum output required time after clock: 0.592ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 0.646ns (frequency: 1547.628MHz)
+  Total number of paths / destination ports: 26 / 26
+-------------------------------------------------------------------------
+Delay:               0.646ns (Levels of Logic = 1)
+  Source:            I1_LD (FF)
+  Destination:       I1_LD (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: I1_LD to I1_LD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.236   0.367  I1_LD (I0_LD_OBUF)
+     LUT5:I4->O            1   0.043   0.000  I1_LD_glue_set (I1_LD_glue_set)
+     FDR:D                    -0.000          I1_LD
+    ----------------------------------------
+    Total                      0.646ns (0.279ns logic, 0.367ns route)
+                                       (43.2% logic, 56.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1265 / 81
+-------------------------------------------------------------------------
+Offset:              3.575ns (Levels of Logic = 8)
+  Source:            Q<9> (PAD)
+  Destination:       SEQ_COUNT_RST (FF)
+  Destination Clock: clk rising
+
+  Data Path: Q<9> to SEQ_COUNT_RST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   0.000   0.675  Q_9_IBUF (Q_9_IBUF)
+     LUT5:I0->O            1   0.043   0.350  _n3397_inv6 (_n3397_inv6)
+     LUT6:I5->O            1   0.043   0.495  _n3397_inv8_SW0 (N37)
+     LUT6:I3->O            1   0.043   0.603  _n3397_inv8 (_n3397_inv8)
+     LUT5:I0->O            1   0.043   0.522  _n3397_inv9_SW0 (N39)
+     LUT6:I2->O            1   0.043   0.000  _n3397_inv9_F (N45)
+     MUXF7:I0->O           1   0.176   0.495  _n3397_inv9 (_n3397_inv)
+     LUT6:I3->O            1   0.043   0.000  SEQ_COUNT_RST_glue_set (SEQ_COUNT_RST_glue_set)
+     FDR:D                    -0.000          SEQ_COUNT_RST
+    ----------------------------------------
+    Total                      3.575ns (0.434ns logic, 3.141ns route)
+                                       (12.1% logic, 87.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 38 / 38
+-------------------------------------------------------------------------
+Offset:              0.592ns (Levels of Logic = 1)
+  Source:            I1_LD (FF)
+  Destination:       I0_LD (PAD)
+  Source Clock:      clk rising
+
+  Data Path: I1_LD to I0_LD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.236   0.356  I1_LD (I0_LD_OBUF)
+     OBUF:I->O                 0.000          I0_LD_OBUF (I0_LD)
+    ----------------------------------------
+    Total                      0.592ns (0.236ns logic, 0.356ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    0.646|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.44 secs
+ 
+--> 
+
+Total memory usage is 4653816 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

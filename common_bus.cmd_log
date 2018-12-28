@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/full_mano_CPU/common_bus.xst" -ofn "D:/full_mano_CPU/common_bus.syr" 
+netgen -intstyle ise -ar Structure -tm common_bus -w -dir netgen/synthesis -ofmt vhdl -sim common_bus.ngc common_bus_synthesis.vhd 

@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "D:/full_mano_CPU/CPU.xst" -ofn "D:/full_mano_CPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/full_mano_CPU/CPU.xst" -ofn "D:/full_mano_CPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/full_mano_CPU/CPU.xst" -ofn "D:/full_mano_CPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/full_mano_CPU/CPU.xst" -ofn "D:/full_mano_CPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/full_mano_CPU/CPU.xst" -ofn "D:/full_mano_CPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/full_mano_CPU/CPU.xst" -ofn "D:/full_mano_CPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/full_mano_CPU/CPU.xst" -ofn "D:/full_mano_CPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/full_mano_CPU/CPU.xst" -ofn "D:/full_mano_CPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/full_mano_CPU/CPU.xst" -ofn "D:/full_mano_CPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/full_mano_CPU/CPU.xst" -ofn "D:/full_mano_CPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/full_mano_CPU/CPU.xst" -ofn "D:/full_mano_CPU/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/Roozbeh Ghasemi/Desktop/Arad_Roozbeh_Final_9434005_9531424/CPU.xst" -ofn "C:/Users/Roozbeh Ghasemi/Desktop/Arad_Roozbeh_Final_9434005_9531424/CPU.syr" 
+vhdtdtfi -lib work sequence_counter.vhd -lib work PC.vhd -lib work OUTR.vhd -lib work OPR.vhd -lib work MUX_8to1.vhd -lib work MUX_4to1_8bit.vhd -lib work MUX_2to1_16bit.vhd -lib work MUX_2to1_10bit.vhd -lib work memory.vhd -lib work MBR.vhd -lib work MAR.vhd -lib work INVERTER_8bit.vhd -lib work INP.vhd -lib work FF.vhd -lib work DECODER_4to16.vhd -lib work DECODER_3to8.vhd -lib work DECODER_2to4.vhd -lib work CR.vhd -lib work Control_Unit.vhd -lib work AR.vhd -lib work alu.vhd -lib work AC.vhd -lib work CPU.vhd -prj Arad_Roozbeh_Final_9434005_9531424 -o CPU.spl -module CPU -template D:/ISE_NEW_VERSION/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 CPU.spl {C:/Users/Roozbeh Ghasemi/Desktop/Arad_Roozbeh_Final_9434005_9531424/CPU.sym} 
+vhdtdtfi -prj Arad_Roozbeh_Final_9434005_9531424 -o "C:/Users/Roozbeh Ghasemi/Desktop/Arad_Roozbeh_Final_9434005_9531424/CPU.vhi" -module CPU -template D:/ISE_NEW_VERSION/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work sequence_counter.vhd -lib work PC.vhd -lib work OUTR.vhd -lib work OPR.vhd -lib work MUX_8to1.vhd -lib work MUX_4to1_8bit.vhd -lib work MUX_2to1_16bit.vhd -lib work MUX_2to1_10bit.vhd -lib work memory.vhd -lib work MBR.vhd -lib work MAR.vhd -lib work INVERTER_8bit.vhd -lib work INP.vhd -lib work FF.vhd -lib work DECODER_4to16.vhd -lib work DECODER_3to8.vhd -lib work DECODER_2to4.vhd -lib work CR.vhd -lib work Control_Unit.vhd -lib work AR.vhd -lib work alu.vhd -lib work AC.vhd -lib work CPU.vhd 
+xst -intstyle ise -ifn "C:/Users/Roozbeh Ghasemi/Desktop/Arad_Roozbeh_Final_9434005_9531424/CPU.xst" -ofn "C:/Users/Roozbeh Ghasemi/Desktop/Arad_Roozbeh_Final_9434005_9531424/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/Roozbeh Ghasemi/Desktop/Arad_Roozbeh_Final_9434005_9531424/CPU.xst" -ofn "C:/Users/Roozbeh Ghasemi/Desktop/Arad_Roozbeh_Final_9434005_9531424/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 "CPU.ngc" CPU.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
